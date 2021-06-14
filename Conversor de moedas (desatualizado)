@@ -1,0 +1,8 @@
+nome = input('Qual é o seu nome? ')
+real = float(input(f'Olá {nome}, Digite o valor R$'))
+dolar = real / 5.78
+euro = real / 6.91
+dolarcan = real / 4.59
+dolaral = real / 4.48
+print(f'Com o valor R${real} você pode comprar: \n US${dolar:.2f}')
+print(f'CA${dolarcan:.2f} \n £{euro:.2f} \n AU${dolaral:.2f} ')
