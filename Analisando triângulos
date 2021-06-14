@@ -1,0 +1,15 @@
+r1 = float(input('Digite o primeiro segmento: '))
+r2 = float(input('Digite o segundo segmento: '))
+r3 = float(input('Digite o terceiro segmento? '))
+if r1 < r2 + r3 or r2 < r1 + r3 or r3 < r1 + r2:
+    print('Os segmentos acima formam um triângulo', end=' ')
+    #Se r1 for igual a R2
+    if r1 == r2 == r3:
+        print('EQUILÁTERO!')
+        # SE r1 for diferente de r2
+    if r1 != r2 != r3 != r1:
+        print('ESCALENO!')
+    else:
+        print('ISÓSCELES')
+else:
+    print('Os segmentos acima não podem formar um triângulo!')
