@@ -1,0 +1,11 @@
+valorC = float(input('Digite o valor da casa: R$ '))
+salario = float(input('Digite o salario do comprador: R$ '))
+anos = int(input('Em quantos anos você irá pagar?  '))
+minimo = salario * 30 / 100
+prestacao = valorC / (anos * 12)
+print(f'Para pagar uma casa de R${valorC} em {anos} anos, a prestação sera de R${prestacao}')
+if prestacao <= minimo:
+    print('EMPRESTIMO CONCEDIDO!!!')
+else:
+    print('EMPRESTIMO NEGADO!')
+
