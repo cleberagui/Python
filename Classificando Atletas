@@ -1,0 +1,19 @@
+from datetime import date
+data = date.today().year
+nasc = int(input('Digite o ano de nascimento: '))
+atual = data - nasc
+if atual <= 9:
+    print(f'Você tem {atual} anos de idade!')
+    print('CATEGORIA MIRIM')
+elif atual == 10 or atual <= 14:
+    print(f'Você tem {atual} anos de idade!')
+    print(f'CATEGORIA INFANTIL')
+elif atual == 15 or atual <= 19:
+    print(f'Você tem {atual} anos de idade!')
+    print('CATEGORIA JUNIOR')
+elif atual == 20 or atual <= 25:
+    print(f'Você tem {atual} anos de idade!')
+    print('CATEGORIA SÊNIOR')
+else:
+    print(f'Você tem {atual} anos de idade!')
+    print('CATEGORIA MASTER')
