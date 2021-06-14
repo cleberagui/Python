@@ -1,0 +1,9 @@
+n1 = float(input('Digita a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+r = (n1 + n2) / 2
+if r < 5.0:
+    print('REPROVADO')
+elif r == 5.0 or r < 6.9:
+    print('RECUPERAÇÂO')
+else:
+    print('APROVADO')
